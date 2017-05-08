@@ -19,7 +19,10 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "yiisoft/yii2-authclient": "^2.1",
-        "kartik-v/yii2-icons": "@dev"
+        "kartik-v/yii2-icons": "@dev",
+        "kartik-v/yii2-dynagrid": "@dev",
+        "kartik-v/yii2-mpdf": "*",
+        "symfony/var-dumper": "^3.2"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

@@ -16,6 +16,12 @@ return [
             'class' => 'backend\modules\user\UserModule',
             'loginSessionDuration' => 2592000,
         ],
+        'dynagrid' => [
+            'class' => '\kartik\dynagrid\Module',
+        ],
+        'gridview' => [
+            'class' => '\kartik\grid\Module',
+        ],
     ],
     'components' => [
         'request' => [
@@ -49,6 +55,7 @@ return [
             'rules' => [
                 'login' => 'site/login',
                 'logout' => 'site/logout',
+                'menu' => 'backend-menu/index',
             ],
         ],
 

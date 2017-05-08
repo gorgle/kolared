@@ -81,6 +81,7 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             $this->redirect(Url::toRoute(['dashboard/index']));
         } else {
+            $this->layout = 'main-no';
             return $this->render('login', [
                 'model' => $model,
             ]);

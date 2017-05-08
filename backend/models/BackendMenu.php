@@ -132,7 +132,6 @@ class BackendMenu extends \yii\db\ActiveRecord
             $cacheKey = static::tableName().":$id";
             if(false === $model = Yii::$app->cache->get($cacheKey)){
                 $model = static::find()->where(['id' => $id]);
-
                 if(null !== $model = $model->one()){
                     Yii::$app->cache->set(
                         $cacheKey,
